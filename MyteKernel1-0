@@ -1,9 +1,24 @@
 #define AUTHOR
 #define DESC
-static void boot(void)
+
+void kmain(void)
 {
+char *str = "Start Up message";
+char *vidptr = (char*)0xb8000;
+unsigned int i = 0;
+unsigned int j = 0;
+
+while(j < 80 * 25 * 2){
+vidptr[j] = ' ';
+j = j + 2;
+}
+
+j = 0;
+while(str[j] != '/0'){
 
 }
+}
+
 static void clear_memory(void) 
 {
 
