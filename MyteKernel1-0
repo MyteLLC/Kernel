@@ -1,3 +1,10 @@
-void kmain(void){
+int main(void){
+boot();
+}
+void boot(void){
+kmain();
+}
+void kmain(void)
+{
 
 }
